@@ -2,6 +2,7 @@ package javaPrograms;
 
 public class ReverseNumbers {
 	// program 3: how to reverse numbers
+	// This is a program to reverse the nuumber
 
 	public static void main(String[] args) {
 		int i = 12345;
