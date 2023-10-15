@@ -2,6 +2,7 @@ package javaPrograms;
 
 public class ReverseStringPart1 {
 	//Program: To Reverse string
+	//hello this is a program of reverse a string
 
 	public static void main(String[] args) {
 		String s= "Automation";
