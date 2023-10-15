@@ -1,0 +1,19 @@
+Feature: Login Functionality
+
+Background: Navigate the Website
+Given User launch site URL
+
+@reg @smoke
+Scenario: Verify Successful login with valid credentials
+When User enters valid "hola" and "Mumbasa@123"
+And User click on login button
+Then Validate successful login
+
+@reg 
+Scenario: Verify successfull login with OTP
+When User enters Mobile Number
+And User enters OTP
+Then Validate successful login
+
+
+

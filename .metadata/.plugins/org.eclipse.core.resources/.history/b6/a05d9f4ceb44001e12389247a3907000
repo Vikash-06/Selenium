@@ -1,0 +1,30 @@
+package programs;
+
+public class FindPalindromeNumber {
+
+	// find a palindrome numbers
+	// 151 454 67876
+	
+	public static void palindromenumbers(int num) {
+		int r;
+		int sum=0;
+		int t;
+		t=num;
+		while(num>0) {
+			r=num%10;
+			sum=sum*10+r;
+			num=num/10;
+			
+		}
+		if(t==sum) {
+			System.out.println("palidrome number");
+		}else {
+			System.out.println("not a palindrome number");
+		}
+	}
+
+	public static void main(String[] args) {
+		palindromenumbers(454);
+	}
+
+}

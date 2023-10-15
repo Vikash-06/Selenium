@@ -1,0 +1,16 @@
+package javaPrograms;
+
+public class ReverseStringPart2 {
+
+	public static void main(String[] args) {
+		String s = "Automation Testing Machine";
+		String rev = "";
+		String [] ary = s.split(" ");
+		int l = ary.length;
+		System.out.println(l);
+		
+		
+
+	}
+
+}

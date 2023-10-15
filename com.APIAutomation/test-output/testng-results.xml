@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-05T04:56:38Z" name="Default suite" finished-at="2023-07-05T04:56:49Z" duration-ms="11544">
+    <groups>
+    </groups>
+    <test started-at="2023-07-05T04:56:38Z" name="Default test" finished-at="2023-07-05T04:56:49Z" duration-ms="11544">
+      <class name="demoTest.GoogleTestCasePojo">
+        <test-method is-config="true" signature="setup()[pri:0, instance:demoTest.GoogleTestCasePojo@4b29d1d2]" started-at="2023-07-05T10:26:38Z" name="setup" finished-at="2023-07-05T10:26:38Z" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="newmethod()[pri:0, instance:demoTest.GoogleTestCasePojo@4b29d1d2]" started-at="2023-07-05T10:26:38Z" name="newmethod" finished-at="2023-07-05T10:26:49Z" duration-ms="11499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newmethod -->
+      </class> <!-- demoTest.GoogleTestCasePojo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

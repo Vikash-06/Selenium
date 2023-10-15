@@ -1,0 +1,39 @@
+package programs;
+
+public class FindPrimeNumbers {
+
+	public static boolean IsPrimeNumber(int num) {
+
+		// lowest prime number is 2
+		// edge/corner number
+		if (num <= 1) {
+			return false;
+
+		}
+		for (int i = 2; i < num; i++) {
+			if (num % i == 0) {
+				return false;
+			}
+
+		}
+		return true;
+
+	}
+
+	// to find the prime numbers from 2 - 20 then
+
+	public static void getPrimeNumbers(int num) {
+		for (int i = 2; i<=num; i++ ) {
+			if(IsPrimeNumber(i)) {
+				
+			System.out.println(i);	
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		//System.out.println(IsPrimeNumber(5));
+		getPrimeNumbers(100);
+		
+	}
+}

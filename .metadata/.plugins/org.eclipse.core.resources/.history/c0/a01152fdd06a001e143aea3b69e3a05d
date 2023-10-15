@@ -1,0 +1,37 @@
+package stepDefination;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import page.LoginPage;
+
+public class LoginPageSteps {
+	LoginPage login = new LoginPage();
+
+	@When("User enters valid {string} and {string}")
+	public void user_enters_valid_and(String username, String password) {
+		login.user_enters_valid_username_and_password(username, password);
+	}
+
+	@And("User click on login button")
+	public void user_click_on_login_button() {
+		login.user_click_on_login_button();
+	}
+
+	@Then("Validate successful login")
+	public void validate_successful_login() {
+		login.validate_successful_login();
+
+	}
+
+	@When("User enters Mobile Number")
+	public void user_enters_mobile_number() {
+
+	}
+
+	@And("User enters OTP")
+	public void user_enters_otp() {
+
+	}
+
+}

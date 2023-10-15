@@ -1,0 +1,43 @@
+package stepDefination;
+
+import helper.Base;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import page.LoginPage;
+
+public class LoginPageSteps extends Base {
+	LoginPage login = new LoginPage();
+
+	@Given("User launch site URL")
+	public void user_launch_site_url() {
+		setup();
+	}
+
+	@When("User enters valid {string} and {string}")
+	public void user_enters_valid_and(String username, String password) {
+	    
+	}
+
+	@And("User click on login button")
+	public void user_click_on_login_button() {
+		login.user_click_on_login_button();
+	}
+
+	@Then("Validate successful login")
+	public void validate_successful_login() {
+
+	}
+
+	@When("User enters Mobile Number")
+	public void user_enters_mobile_number() {
+
+	}
+
+	@And("User enters OTP")
+	public void user_enters_otp() {
+
+	}
+
+}

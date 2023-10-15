@@ -1,0 +1,22 @@
+package page;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import helper.Base;
+
+public class LoginPage extends Base {
+
+	public void user_enters_valid_username_and_password() {
+		WebElement Username = driver.findElement(By.xpath("//input[@id='user-name']"));
+		Username.sendKeys(prop.getProperty("username"));
+		WebElement password = driver.findElement(By.xpath("//input[@id='password']"));
+		password.sendKeys(prop.getProperty("password"));
+	}
+
+	public void user_click_on_login_button() {
+		WebElement loginbutton = driver.findElement(By.xpath("//input[@id='login-button']"));
+		loginbutton.click();
+	}
+
+}

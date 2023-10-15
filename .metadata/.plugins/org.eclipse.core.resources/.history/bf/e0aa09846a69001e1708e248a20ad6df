@@ -1,0 +1,26 @@
+@All
+Feature: Login Functionality
+
+Background: Navigate the Website
+Given User launch site URL
+
+@reg @smoke
+Scenario Outline: Verify Successful login with valid credentials
+When User enters valid "<username>" and "<password>"
+And User click on login button
+Then Validate successful login
+
+Examples:
+|username|password|
+|test1|test@123|
+#|test2|test@1234|
+#|test3|test@12345|
+
+@reg 
+Scenario: Verify successfull login with OTP
+When User enters Mobile Number
+And User enters OTP
+Then Validate successful login
+
+
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="methods" name="Failed suite [BankingSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="vik@1994"/>
+  <parameter name="siteurl" value="https://www.google.com/"/>
+  <parameter name="username" value="vikash.Tyagi"/>
+  <listeners>
+    <listener class-name="demo.ListenersConcept"/>
+  </listeners>
+  <test parallel="methods" name="LoanDepartment(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="demo.Class1">
+        <methods>
+          <include name="homeLoan"/>
+        </methods>
+      </class> <!-- demo.Class1 -->
+    </classes>
+  </test> <!-- LoanDepartment(failed) -->
+</suite> <!-- Failed suite [BankingSuite] -->

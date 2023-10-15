@@ -1,0 +1,12 @@
+package programs;
+
+public class SwapStrings {
+	//program no. 9
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

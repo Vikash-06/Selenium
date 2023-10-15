@@ -1,0 +1,22 @@
+package runner;
+
+import org.junit.runner.RunWith;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+//Add dependencies 1. Junit and 2. Cucumber Junit (io.cucumber)
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features = "src/test/java/features", glue = "stepDefination", tags = "@smoke")
+
+//features = path of features package containing feature files
+//glue = path of stepdefination package
+//tags = tags define above the scenrions in feature file to perform the testing @regression @smoke
+//plugin = plugin is use to generate the reports html reports, json reports (Cucumber reports)
+//dryrun= true (dryrun is use to check the maping between the stepDefination class and feature file
+//monochrome = is use to make console more readable
+
+public class TestRunner {
+
+}

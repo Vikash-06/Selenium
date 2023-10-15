@@ -1,0 +1,28 @@
+package programs;
+
+public class SwapStrings {
+
+	public static void main(String[] args) {
+		String a ="Hello";
+		String b = "World";
+		System.out.println("Before swaping");
+		System.out.println("the value of a:"+a);
+		System.out.println("the value of b:"+b);
+		//append a and b
+		a= a+b; //HelloWorld
+		
+		//store initial string a in string b
+		b = a.substring(0, a.length()-b.length()); //Hello
+		
+		//store initial string b in string a
+		a= a.substring(b.length()); //World
+		
+		System.out.println("After Swaping");
+		System.out.println("the value of a:"+a);
+		System.out.println("the value of b:"+b);
+		
+		
+
+	}
+
+}
